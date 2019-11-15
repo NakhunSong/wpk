@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --config ./config/webpack.config.dev --hot"
   },
   "dependencies": {
     "node-gyp": "^6.0.1",

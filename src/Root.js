@@ -1,5 +1,5 @@
 import React from 'react';
-import './base.css';
+import './base.scss';
 
 const Root = () => {
     return (

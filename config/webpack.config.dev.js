@@ -10,6 +10,11 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname + '/dist'),
     },
+    devServer: {
+        index: 'index.html',
+        contentBase: path.resolve('./build'),
+        port: 5000,
+    },
     resolve: {
         modules: ['node_modules'],
         extensions: ['.js', '.json', '.jsx', '.css']
@@ -44,6 +49,10 @@ module.exports = {
             {
               test: /\.css$/,
               use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+              test: /\.scss$/,
+              use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             }
         ]
     },

@@ -1,0 +1,18 @@
+$baseSize: 1.5rem;
+$baseColor: green;
+
+.html, body {
+    margin: 0;
+}
+.header {
+    color: $baseColor;
+    font-size: $baseSize;
+    text-align: center;
+}
+
+.main {
+    min-height: 100vh;
+    color: blue;
+    font-size: .8rem;
+    text-align: center;
+}

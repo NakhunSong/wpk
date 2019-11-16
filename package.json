@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config ./config/webpack.config.prod",
     "start": "webpack-dev-server --config ./config/webpack.config.dev --hot"
   },
   "dependencies": {

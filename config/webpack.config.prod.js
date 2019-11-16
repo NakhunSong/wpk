@@ -5,16 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname + '/dist'),
-    },
-    devServer: {
-        index: 'index.html',
-        contentBase: path.resolve('./build'),
-        port: 5000,
+        filename: 'bundle.[chunkhash].js',
+        path: path.resolve(__dirname, '../dist'),
     },
     resolve: {
         modules: ['node_modules'],
@@ -63,7 +58,7 @@ module.exports = {
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({
-          filename: 'style.css'
+          filename: 'style-test.css'
         }),
         new webpack.EnvironmentPlugin(['NODE_ENV']),
         new CleanWebpackPlugin(),

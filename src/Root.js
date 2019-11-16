@@ -1,16 +1,10 @@
 import React from 'react';
-import './base.scss';
+import './styles/base.scss';
+import App from './App';
 
 const Root = () => {
     return (
-        <div>
-            <div className="header">
-                React Header
-            </div>
-            <div>
-                React Body
-            </div>
-        </div>
+        <App />
     );
 };
 

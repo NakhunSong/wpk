@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const App = () => {
+const Home = () => {
     return (
         <div>
             <div className="header">
-                Header
+                <Link to="/about"><a>about</a></Link>
             </div>
             <div className="main">
                 Main
@@ -13,4 +14,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Home;
